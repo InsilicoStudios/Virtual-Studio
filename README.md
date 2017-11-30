@@ -3,7 +3,9 @@ A collection of VR painting and design tools developed for the Unity game engine
 
 Build using C# mesh extraction algortims and VRTK :https://github.com/thestonefox/VRTK . Note that VRTK is not required for Virtual Studio to work, but without it some functionality will be lost. This repository includes a stripped down version of VRKT. 
 
-//------------------------------------------------------------------------------------------
+
+//------------------------------------------------------------------------------------------------------------
+
 QUICK START QUIDE:
 
 Check the demo scene example in VirtualStudio/ExampleScene.unity 
