@@ -11,6 +11,11 @@ public class A_PaintPalette : MonoBehaviour {
     [Tooltip("Attach the [Paint_Brush] script!")]
     public GameObject PaintBrush;
     A_PaintBrush paintBrush;
+    [Tooltip("This will toggle an extra menu to select painted object, merge them, and save as obj")]
+
+    //save work mode
+    GameObject ObjectSpecificMenu;
+    public bool saveWorkMode;
     [Space(10)]
 
     [Header("Initial brush options:")]
@@ -58,6 +63,7 @@ public class A_PaintPalette : MonoBehaviour {
     //pressure sensitivity
     [Space(10)]
     public bool PressureSensitivity;
+
     #endregion
 
     void Awake()
@@ -75,6 +81,15 @@ public class A_PaintPalette : MonoBehaviour {
             catch (Exception e) { print("ray pointer script doesnt exist or has been moved?"); };
         }
         
+    }
+
+    private void Start()
+    {
+        if (saveWorkMode)
+        {
+            ObjectSpecificMenu = this.transform.GetChild(2).gameObject;
+            ObjectSpecificMenu.SetActive(true);
+        }
     }
 
     //incoming brush selections

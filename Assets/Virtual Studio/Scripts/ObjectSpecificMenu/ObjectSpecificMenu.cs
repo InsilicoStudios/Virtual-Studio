@@ -129,12 +129,10 @@ public class ObjectSpecificMenu : MonoBehaviour
             countObj = 0;
             foreach(GameObject obj in objectsSelected)
             {
-
                 //restore colors and materials
-
                 foreach (Renderer rend in obj.GetComponentsInChildren<Renderer>())
                     {
-                        print(countCol);
+                        //print(countCol);
                         rend.material = objectsSelectedMaterials[countCol];
                         rend.material.color = objectsSelectedColors[countCol];
                         countCol++;
@@ -148,6 +146,11 @@ public class ObjectSpecificMenu : MonoBehaviour
                 foreach (Transform trans in objectsSelectedChildren)
                 {
                     trans.parent = mergedObjects.transform;
+                    //add the save prefab script
+                   // if (!mergedObjects.GetComponent<SaveMeshInEditor>())
+                    //{
+                    //    mergedObjects.AddComponent<SaveMeshInEditor>();
+                   // }
                     //then destroy the leftover objects
                     Destroy(obj);
                 }
@@ -260,5 +263,28 @@ public class ObjectSpecificMenu : MonoBehaviour
         //delete name from display panel 
         selObjText.text = selObjText.text.Replace("\n" + "- " + incomingObjDeselected.name, "");
 
+    }
+
+    public void SaveObject()
+    {
+   
+
+        if (objectsSelected.Count == 0)
+        {
+            selObjText.text = "!!!No objects selected to save!!!";
+        }
+        else
+        {
+            foreach (GameObject paintObject in objectsSelected)
+            {
+            #if UNITY_EDITOR
+                if (paintObject.GetComponent<SaveMeshInEditor>())
+                {
+                    paintObject.GetComponent<SaveMeshInEditor>().SaveAsset();
+                    selObjText.text = paintObject.name + " saved";
+                }
+            #endif
+            }
+        }
     }
 }

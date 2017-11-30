@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 114985321519527138}
   - component: {fileID: 114283801852038426}
   - component: {fileID: 114426738050216802}
+  - component: {fileID: 114295473742257644}
   m_Layer: 0
   m_Name: cubesInCircle
   m_TagString: paint
@@ -115,6 +116,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -130,6 +132,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -188,6 +191,7 @@ MonoBehaviour:
   disableWhenIdle: 1
   touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
   allowedTouchControllers: 0
+  ignoredColliders: []
   isGrabbable: 1
   holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
@@ -203,6 +207,19 @@ MonoBehaviour:
   useOverrideButton: 0
   allowedUseControllers: 0
   usingState: 0
+--- !u!114 &114295473742257644
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1066660592487802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27dbcef8761655a41aebc772ddf9cb5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  saveKey: 46
+  savedObjectsPath: Assets/Virtual Studio/RuntimeGeneratedObjects/
 --- !u!114 &114426738050216802
 MonoBehaviour:
   m_ObjectHideFlags: 1

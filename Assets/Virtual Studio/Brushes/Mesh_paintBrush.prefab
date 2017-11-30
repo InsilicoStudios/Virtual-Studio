@@ -57,8 +57,8 @@ GameObject:
   - component: {fileID: 114065915572126616}
   - component: {fileID: 54080091086733830}
   - component: {fileID: 114522254334155338}
-  - component: {fileID: 114597068730191520}
   - component: {fileID: 114272786421203232}
+  - component: {fileID: 114597068730191520}
   m_Layer: 0
   m_Name: Mesh_paintBrush
   m_TagString: paint
@@ -116,6 +116,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -131,6 +132,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -235,6 +237,7 @@ MonoBehaviour:
   disableWhenIdle: 1
   touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
   allowedTouchControllers: 0
+  ignoredColliders: []
   isGrabbable: 1
   holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
@@ -262,6 +265,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   saveKey: 46
+  savedObjectsPath: Assets/Virtual Studio/RuntimeGeneratedObjects/
 --- !u!114 &114658869760312210
 MonoBehaviour:
   m_ObjectHideFlags: 1

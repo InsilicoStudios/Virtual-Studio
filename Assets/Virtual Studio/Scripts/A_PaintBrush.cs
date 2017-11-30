@@ -282,9 +282,6 @@ public class A_PaintBrush : MonoBehaviour
         {
             //make a global paint holder for all created objects
             if(paintGlobal == null) { paintGlobal = new GameObject("Paint_Global");
-            #if UNITY_EDITOR
-            paintGlobal.AddComponent<SavePrefabGameObject>();
-            #endif
             };
          
             //instantiate paint and parent to paintGlobal object

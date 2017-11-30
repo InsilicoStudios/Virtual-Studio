@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 114817618056727318}
   - component: {fileID: 114420364738254512}
   - component: {fileID: 114106710043872360}
+  - component: {fileID: 114450801533903222}
   m_Layer: 0
   m_Name: PVolume_cilinder
   m_TagString: paint
@@ -116,6 +117,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -131,6 +133,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -207,6 +210,7 @@ MonoBehaviour:
   disableWhenIdle: 1
   touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
   allowedTouchControllers: 0
+  ignoredColliders: []
   isGrabbable: 1
   holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
@@ -252,6 +256,19 @@ MonoBehaviour:
   lockYAxis: 0
   lockZAxis: 0
   uniformScaling: 1
+--- !u!114 &114450801533903222
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1736055064776166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27dbcef8761655a41aebc772ddf9cb5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  saveKey: 46
+  savedObjectsPath: Assets/Virtual Studio/RuntimeGeneratedObjects/
 --- !u!114 &114817618056727318
 MonoBehaviour:
   m_ObjectHideFlags: 1

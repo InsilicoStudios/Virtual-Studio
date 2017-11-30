@@ -40,8 +40,8 @@ GameObject:
   - component: {fileID: 114249917577254210}
   - component: {fileID: 114329916250997046}
   - component: {fileID: 114085940629062992}
-  - component: {fileID: 114856735290110116}
   - component: {fileID: 114158244324398610}
+  - component: {fileID: 114856735290110116}
   m_Layer: 0
   m_Name: 2cilinders
   m_TagString: paint
@@ -117,6 +117,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -132,6 +133,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -213,6 +215,7 @@ MonoBehaviour:
   disableWhenIdle: 1
   touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
   allowedTouchControllers: 0
+  ignoredColliders: []
   isGrabbable: 1
   holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
@@ -268,6 +271,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   saveKey: 46
+  savedObjectsPath: Assets/Virtual Studio/RuntimeGeneratedMeshes
 --- !u!114 &114988431948148060
 MonoBehaviour:
   m_ObjectHideFlags: 1
