@@ -12,6 +12,8 @@ Check the demo scene example in VirtualStudio/ExampleScene.unity
 
 Documentation can be found here: https://drive.google.com/open?id=15Ru3QirLG5ZE6r6iMsiO8nMJO1_5QMDg8uDlroNGxok
 
+A build of the project can be downloaded from here: https://www.dropbox.com/sh/hr3ydtibbixb71u/AADF0jcN0gEPeGtJjLt0nHySa?raw=1
+
 //---------------------------------------------------------------------------------------------------------------------------------
 
 
