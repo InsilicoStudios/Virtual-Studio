@@ -1643,7 +1643,7 @@ Prefab:
     - target: {fileID: 114836214010235796, guid: 5382b19279a04214c9b8c393f36c1851,
         type: 2}
       propertyPath: saveWorkMode
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 23736816124109134, guid: 5382b19279a04214c9b8c393f36c1851,
         type: 2}
