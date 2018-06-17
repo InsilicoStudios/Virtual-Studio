@@ -184,7 +184,7 @@ public class A_PaintBrush : MonoBehaviour
                 float paintDensityS = Vector3.Distance(initialPaintContactPos, paintBrushHolder.position);
                 if (extrudeMesh != null && controller.GetAxis(Valve.VR.EVRButtonId.k_EButton_SteamVR_Trigger).x > 0.81f)
                 {
-                    print("trigger half way up");
+                    //print("trigger half way up");
                     paintDensity = paintDensityS;
                     extrudeMesh.minDistance = paintDensity;
                 }
@@ -583,6 +583,9 @@ public class A_PaintBrush : MonoBehaviour
         if (straightLines == true)
         {
             straightLines = false;
+            //bug!! doesnt seem to return to previous paint density
+            paintDensity = 0.01f;
+            //
         }
         else
         {
